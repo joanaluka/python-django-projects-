@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akirachix</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Registration Number</th>
+			<th>Proffesion</th>
+			<th>Phone</th>
+			<th>Email</th>
+			<th>Date_joined</th>
+			<th>Id</th>
+			{% for teacher in teachers%}
+
+			<tr>
+				<td>{{teacher.first_name}}</td>
+				<td>{{teacher.last_name}}</td>
+				<td>{{teacher.registration_number}}</td>
+				<td>{{teacher.proffesion}}</td>
+				<td>{{teacher.phone_number}}</td>
+				<td>{{teacher.email}}</td>
+			</tr>
+			{% endfor %}
+		</tr>
+
+		
+	</table>
+
+</body>
+</html>
